@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.codepath.tayousyl.tayousyl.R;
+import com.codepath.tayousyl.R;
 import com.codepath.tayousyl.TwitterApplication;
 import com.codepath.tayousyl.TwitterClient;
 import com.codepath.tayousyl.constants.Extras;
@@ -41,6 +41,7 @@ public class TweetDetailsActivity extends AppCompatActivity implements ComposeTw
         setContentView(R.layout.activity_tweet_details);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setLogo(R.drawable.twitter_logo);
         Long id = getIntent().getLongExtra(Extras.TWEET_ID, -1L);
         TwitterApplication.getRestClient().getStatus(id, new TwitterClient.TweetResponseHandler() {
             @Override
@@ -174,7 +175,10 @@ public class TweetDetailsActivity extends AppCompatActivity implements ComposeTw
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 composeTweetFragment = new ComposeTweetFragment();
                 composeTweetFragment.setInReplyToStatusId(tweet.getId());
+               // composeTweetFragment.setInReplyToStatusId(tweet.getUser());
                 composeTweetFragment.setListener(new ComposeTweetFragment.StatusUpdateListener() {
+
+
                     @Override
                     public void onStatusUpdated() {
                         composeTweetFragment.dismiss();

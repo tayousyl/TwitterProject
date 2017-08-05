@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.tayousyl.tayousyl.R;
+import com.codepath.tayousyl.R;
 import com.codepath.tayousyl.TwitterApplication;
 import com.codepath.tayousyl.TwitterClient;
 import com.codepath.tayousyl.models.TwitterUser;

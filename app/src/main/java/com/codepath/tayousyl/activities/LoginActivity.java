@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-import com.codepath.tayousyl.tayousyl.R;
+import com.codepath.tayousyl.R;
 import com.codepath.tayousyl.TwitterClient;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
 

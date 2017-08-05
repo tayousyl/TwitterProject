@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TweetsMe</string>
+    <string name="app_name">TwitterProject</string>
     <string name="login_label">Connect to Twitter</string>
-    <string name="title_activity_timeline">Your Timeline</string>
-    <string name="title_activity_tweet_details">Tweet Details</string>
-    <string name="user_screen_name">\@bart_simpson</string>
-    <string name="tweet_text">Don\'t Have a Cow, Man!</string>
-    <string name="created_at_long">7:51 AM - 26 OCT 2015</string>
+    <string name="title_activity_timeline">  Timeline</string>
+    <string name="title_activity_tweet_details">     More Details...</string>
+    <string name="user_screen_name">\@tayousyl</string>
+    <string name="tweet_text">Please Wait...</string>
+    <string name="created_at_long">7:51 AM - 05 Aug 2017</string>
     <string name="reweet_count">23</string>
     <string name="favorites_count">42</string>
-    <string name="user_name">Bart Simpson</string>
+    <string name="user_name">Tayousyl</string>
     <string name="compose_tweet_hint">What\'s going on?</string>
     <string name="update_status">Tweet</string>
     <string name="characters_left">140</string>
     <string name="created_at_relative">10m</string>
     <string name="tweet_id">-1</string>
+    <string name="welcome">Welcome to Twitter Project</string>
+    <string name="follow">Follow us in Twitter...</string>
 
 </resources>

@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.tayousyl.tayousyl.R;
+import com.codepath.tayousyl.R;
 import com.codepath.tayousyl.activities.TweetDetailsActivity;
 import com.codepath.tayousyl.constants.Extras;
 import com.codepath.tayousyl.models.Entities;

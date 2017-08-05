@@ -10,7 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
-import com.codepath.tayousyl.tayousyl.R;
+import com.codepath.tayousyl.R;
 import com.codepath.tayousyl.TwitterApplication;
 import com.codepath.tayousyl.TwitterClient;
 import com.codepath.tayousyl.adapters.TweetsAdapter;
@@ -37,6 +37,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeTweetF
         setContentView(R.layout.activity_timeline);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setLogo(R.drawable.twitter_logo);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
