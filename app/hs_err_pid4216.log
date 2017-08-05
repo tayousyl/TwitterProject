@@ -1,0 +1,120 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 480104 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=4216, tid=0x00000000000008e4
+#
+# JRE version:  (8.0_111-b14) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.111-b14 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002cde800):  JavaThread "Unknown thread" [_thread_in_vm, id=2276, stack(0x0000000002af0000,0x0000000002bf0000)]
+
+Stack: [0x0000000002af0000,0x0000000002bf0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002cde800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2276, stack(0x0000000002af0000,0x0000000002bf0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6df360000 - 0x00007ff6df397000 	C:\Program Files\Java\jdk1.8.0_111\bin\java.exe
+0x00007ffb63010000 - 0x00007ffb631eb000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb61fd0000 - 0x00007ffb6207e000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb60220000 - 0x00007ffb60469000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb61ef0000 - 0x00007ffb61f91000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb62e40000 - 0x00007ffb62edd000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb62ab0000 - 0x00007ffb62b09000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb62ee0000 - 0x00007ffb63005000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb60830000 - 0x00007ffb6097a000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb5f620000 - 0x00007ffb5f63e000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb61fa0000 - 0x00007ffb61fc7000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb60020000 - 0x00007ffb601a8000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb5f530000 - 0x00007ffb5f5ca000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffb60470000 - 0x00007ffb60566000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffb4f9a0000 - 0x00007ffb4fc07000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.15063.483_none_26002d27e7c744a2\COMCTL32.dll
+0x00007ffb62160000 - 0x00007ffb62459000 	C:\WINDOWS\System32\combase.dll
+0x00007ffb601b0000 - 0x00007ffb6021a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffb605b0000 - 0x00007ffb605dd000 	C:\WINDOWS\System32\IMM32.DLL
+0x00000000752a0000 - 0x0000000075372000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\msvcr100.dll
+0x00000000742e0000 - 0x0000000074b7a000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\server\jvm.dll
+0x00007ffb60570000 - 0x00007ffb60578000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffb51960000 - 0x00007ffb51969000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffb5db20000 - 0x00007ffb5db43000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb51780000 - 0x00007ffb5178a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffb62a40000 - 0x00007ffb62aac000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffb5daf0000 - 0x00007ffb5db1b000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffb5f5d0000 - 0x00007ffb5f619000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000075290000 - 0x000000007529f000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\verify.dll
+0x0000000075260000 - 0x0000000075289000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\java.dll
+0x0000000075240000 - 0x0000000075256000 	C:\Program Files\Java\jdk1.8.0_111\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Xmx1024M -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -Xmx512M 
+java_command: com.android.dx.command.Main --dex --num-threads=4 --output G:\projetEvaluation\codepath-android-project-3-twitter-client-master 2\app\build\intermediates\pre-dexed\debug\codepath-utils_5f54ff33ad6eec59a57b292e7c18cd1755b7bebf.jar G:\projetEvaluation\codepath-android-project-3-twitter-client-master 2\app\libs\codepath-utils.jar
+java_class_path (initial): C:\Users\domin\AppData\Local\Android\sdk\build-tools\25.0.0\lib\dx.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+_JAVA_OPTIONS=-Xmx512M
+CLASSPATH=.;C:\Program Files (x86)\QuickTime\QTSystem\QTJava.zip
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\android-sdk-windows\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Calibre2\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files\Git\cmd;C:\Users\domin\AppData\Local\Microsoft\WindowsApps;
+USERNAME=domin
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 15063 (10.0.15063.296)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8181612k(1310420k free), swap 10121068k(4632k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.111-b14) for windows-amd64 JRE (1.8.0_111-b14), built on Sep 22 2016 19:24:05 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Aug 01 12:36:24 2017
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
